@@ -1,0 +1,69 @@
+/Users/adriantineo/dev/python/virtualenv/coreml3/lib/python3.6/site-packages/sklearn/externals/joblib/__init__.py:15: DeprecationWarning: sklearn.externals.joblib is deprecated in 0.21 and will be removed in 0.23. Please import this functionality directly from joblib, which can be installed with: pip install joblib. If this warning is raised when loading pickled models, you may need to re-serialize those models with scikit-learn 0.21+.
+  warnings.warn(msg, category=DeprecationWarning)
+/Users/adriantineo/dev/python/virtualenv/coreml3/lib/python3.6/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.
+  FutureWarning)
+/Users/adriantineo/dev/python/virtualenv/coreml3/lib/python3.6/site-packages/sklearn/svm/base.py:929: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+Proceeding with model label threat
+*******************************************
+INPUT DATASET: DESCRIBE, ORIGINAL
+*******************************************
+               toxic   severe_toxic        obscene         threat         insult  identity_hate
+count  159571.000000  159571.000000  159571.000000  159571.000000  159571.000000  159571.000000
+mean        0.095844       0.009996       0.052948       0.002996       0.049364       0.008805
+std         0.294379       0.099477       0.223931       0.054650       0.216627       0.093420
+min         0.000000       0.000000       0.000000       0.000000       0.000000       0.000000
+25%         0.000000       0.000000       0.000000       0.000000       0.000000       0.000000
+50%         0.000000       0.000000       0.000000       0.000000       0.000000       0.000000
+75%         0.000000       0.000000       0.000000       0.000000       0.000000       0.000000
+max         1.000000       1.000000       1.000000       1.000000       1.000000       1.000000
+*******************************************
+INPUT DATASET: HEAD
+*******************************************
+                 id                                       comment_text  toxic  severe_toxic  obscene  threat  insult  identity_hate
+0  0000997932d777bf  Explanation\nWhy the edits made under my usern...      0             0        0       0       0              0
+1  000103f0d9cfb60f  D'aww! He matches this background colour I'm s...      0             0        0       0       0              0
+2  000113f07ec002fd  Hey man, I'm really not trying to edit war. It...      0             0        0       0       0              0
+3  0001b41b1c6bb37e  "\nMore\nI can't make any real suggestions on ...      0             0        0       0       0              0
+4  0001d958c54c6e35  You, sir, are my hero. Any chance you remember...      0             0        0       0       0              0
+*******************************************
+SCORE DATASET: DESCRIBE
+*******************************************
+              toxic  severe_toxic       obscene        threat        insult  identity_hate
+count  63978.000000  63978.000000  63978.000000  63978.000000  63978.000000   63978.000000
+mean       0.095189      0.005736      0.057692      0.003298      0.053565       0.011129
+std        0.293478      0.075522      0.233161      0.057334      0.225160       0.104905
+min        0.000000      0.000000      0.000000      0.000000      0.000000       0.000000
+25%        0.000000      0.000000      0.000000      0.000000      0.000000       0.000000
+50%        0.000000      0.000000      0.000000      0.000000      0.000000       0.000000
+75%        0.000000      0.000000      0.000000      0.000000      0.000000       0.000000
+max        1.000000      1.000000      1.000000      1.000000      1.000000       1.000000
+*******************************************
+SCORE DATASET: HEAD
+*******************************************
+                  id                                       comment_text  toxic  severe_toxic  obscene  threat  insult  identity_hate
+5   0001ea8717f6de06  Thank you for understanding. I think very high...    0.0           0.0      0.0     0.0     0.0            0.0
+7   000247e83dcc1211                   :Dear god this site is horrible.    0.0           0.0      0.0     0.0     0.0            0.0
+11  0002f87b16116a7f  "::: Somebody will invariably try to add Relig...    0.0           0.0      0.0     0.0     0.0            0.0
+13  0003e1cccfd5a40a  " \n\n It says it right there that it IS a typ...    0.0           0.0      0.0     0.0     0.0            0.0
+14  00059ace3e3e9a53  " \n\n == Before adding a new product to the l...    0.0           0.0      0.0     0.0     0.0            0.0
+Input lengths: mean = 394.0732213246768, std = 590.7202819048919, max = 5000
+Score lengths: mean = 383.3793178905249, std = 598.1100714808687, max = 5000
+Dimensions in training set: (127656, 8)
+Dimensions in test set: (31915, 8)
+Dimensions in score set: (63978, 8)
+Using punctuation characters: !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+Creating model for  threat
+Mean accuracy over test set for threat: 0.9971486761710794
+Mean accuracy over score set for threat: 0.9969989683953859
+Confusion matrix over test set for threat:
+[[31801    15]
+ [   76    23]]
+Confusion matrix over score set for threat:
+[[63721    46]
+ [  146    65]]
+Saving model to ./Models/threat.pkl
+
+real	1m7.187s
+user	1m4.091s
+sys	0m2.295s

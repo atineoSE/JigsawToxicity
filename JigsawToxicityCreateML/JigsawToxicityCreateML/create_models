@@ -1,0 +1,5 @@
+#!/bin/bash
+for modelLabel in "toxic" "severe_toxic" "obscene" "threat" "insult" "identity_hate"
+do
+    (time swift main.swift $modelLabel) &> ./Logs/$modelLabel.log
+done

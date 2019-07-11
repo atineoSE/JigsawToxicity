@@ -1,0 +1,231 @@
+Proceeding with model label "threat"
+Finished parsing file /Volumes/MEDIA&DEV/dev/ML_data/JigsawToxic/JigsawToxicity/JigsawToxicity/Data/train_pre.csv
+Parsing completed. Parsed 100 lines in 0.732878 secs.
+Read 122167 lines. Lines per second: 193038	
+Finished parsing file /Volumes/MEDIA&DEV/dev/ML_data/JigsawToxic/JigsawToxicity/JigsawToxicity/Data/train_pre.csv
+Parsing completed. Parsed 159571 lines in 0.781904 secs.
+TRAINING TABLE
+
+Columns:
+    id	string
+    comment_text	string
+    toxic	integer
+    severe_toxic	integer
+    obscene	integer
+    threat	integer
+    insult	integer
+    identity_hate	integer
+    threat_label	string
+Rows: ?
+Data:
++----------------+----------------+----------------+----------------+----------------+
+| id             | comment_text   | toxic          | severe_toxic   | obscene        |
++----------------+----------------+----------------+----------------+----------------+
+| 0000997932d7...| Explanation ...| 0              | 0              | 0              |
+| 000103f0d9cf...| D'aww! He ma...| 0              | 0              | 0              |
+| 000113f07ec0...| Hey man, I'm...| 0              | 0              | 0              |
+| 0001b41b1c6b...| " More I can...| 0              | 0              | 0              |
+| 0001d958c54c...| You, sir, ar...| 0              | 0              | 0              |
+| 00025465d472...| "  Congratul...| 0              | 0              | 0              |
+| 0002bcb3da6c...| COCKSUCKER B...| 1              | 1              | 1              |
+| 00031b1e95af...| Your vandali...| 0              | 0              | 0              |
+| 0005300084f9...| " Fair use r...| 0              | 0              | 0              |
+| 00054a5e18b5...| bbq   be a m...| 0              | 0              | 0              |
++----------------+----------------+----------------+----------------+----------------+
++----------------+----------------+----------------+----------------+
+| threat         | insult         | identity_hate  | threat_label   |
++----------------+----------------+----------------+----------------+
+| 0              | 0              | 0              | non-threat     |
+| 0              | 0              | 0              | non-threat     |
+| 0              | 0              | 0              | non-threat     |
+| 0              | 0              | 0              | non-threat     |
+| 0              | 0              | 0              | non-threat     |
+| 0              | 0              | 0              | non-threat     |
+| 0              | 1              | 0              | non-threat     |
+| 0              | 0              | 0              | non-threat     |
+| 0              | 0              | 0              | non-threat     |
+| 0              | 0              | 0              | non-threat     |
++----------------+----------------+----------------+----------------+
+? rows x 9 columns]
+
+SIZE: (rows: 127715, columns: 9)
+TEST TABLE
+
+Columns:
+    id	string
+    comment_text	string
+    toxic	integer
+    severe_toxic	integer
+    obscene	integer
+    threat	integer
+    insult	integer
+    identity_hate	integer
+    threat_label	string
+Rows: ?
+Data:
++----------------+----------------+----------------+----------------+----------------+
+| id             | comment_text   | toxic          | severe_toxic   | obscene        |
++----------------+----------------+----------------+----------------+----------------+
+| 00037261f536...| Sorry if the...| 0              | 0              | 0              |
+| 00040093b268...| alignment on...| 0              | 0              | 0              |
+| 00070ef96486...| Oh, and the ...| 0              | 0              | 0              |
+| 0009801bd85e...| The Mitsurug...| 0              | 0              | 0              |
+| 000cfee90f50...| "  Re-consid...| 0              | 0              | 0              |
+| 00128363e367...| Not sure abo...| 0              | 0              | 0              |
+| 001325b8b20e...| Praise   loo...| 0              | 0              | 0              |
+| 00151a9f93c6...| "   ""Mainla...| 0              | 0              | 0              |
+| 00169857adbc...| Hi Explicit,...| 0              | 0              | 0              |
+| 001d8e7be417...| "  BI, you s...| 0              | 0              | 0              |
++----------------+----------------+----------------+----------------+----------------+
++----------------+----------------+----------------+----------------+
+| threat         | insult         | identity_hate  | threat_label   |
++----------------+----------------+----------------+----------------+
+| 0              | 0              | 0              | non-threat     |
+| 0              | 0              | 0              | non-threat     |
+| 0              | 0              | 0              | non-threat     |
+| 0              | 0              | 0              | non-threat     |
+| 0              | 0              | 0              | non-threat     |
+| 0              | 0              | 0              | non-threat     |
+| 0              | 0              | 0              | non-threat     |
+| 0              | 0              | 0              | non-threat     |
+| 0              | 0              | 0              | non-threat     |
+| 0              | 0              | 0              | non-threat     |
++----------------+----------------+----------------+----------------+
+? rows x 9 columns]
+
+SIZE: (rows: 31856, columns: 9)
+Finished parsing file /Volumes/MEDIA&DEV/dev/ML_data/JigsawToxic/JigsawToxicity/JigsawToxicity/Data/test_pre.csv
+Parsing completed. Parsed 100 lines in 0.728504 secs.
+Finished parsing file /Volumes/MEDIA&DEV/dev/ML_data/JigsawToxic/JigsawToxicity/JigsawToxicity/Data/test_pre.csv
+Parsing completed. Parsed 153164 lines in 0.667855 secs.
+Finished parsing file /Volumes/MEDIA&DEV/dev/ML_data/JigsawToxic/JigsawToxicity/JigsawToxicity/Data/test_labels.csv
+Parsing completed. Parsed 100 lines in 0.105097 secs.
+Finished parsing file /Volumes/MEDIA&DEV/dev/ML_data/JigsawToxic/JigsawToxicity/JigsawToxicity/Data/test_labels.csv
+Parsing completed. Parsed 153164 lines in 0.084245 secs.
+SCORING TABLE
+
+Columns:
+    comment_text	string
+    threat	integer
+    id	string
+    threat_label	string
+Rows: 63978
+Data:
++----------------+----------------+----------------+----------------+
+| comment_text   | threat         | id             | threat_label   |
++----------------+----------------+----------------+----------------+
+| Thank you fo...| 0              | 0001ea8717f6...| non-threat     |
+| :Dear god th...| 0              | 000247e83dcc...| non-threat     |
+| "::: Somebod...| 0              | 0002f87b1611...| non-threat     |
+| "    It says...| 0              | 0003e1cccfd5...| non-threat     |
+| "    == Befo...| 0              | 00059ace3e3e...| non-threat     |
+| this other o...| 0              | 000663aff0ff...| non-threat     |
+| == Reason fo...| 0              | 000689dd34e2...| non-threat     |
+| |blocked]] f...| 0              | 000844b52dee...| non-threat     |
+| == Arabs are...| 0              | 00091c35fa9d...| non-threat     |
+| Please stop....| 0              | 000968ce11f5...| non-threat     |
++----------------+----------------+----------------+----------------+
+[63978 rows x 4 columns]
+
+SIZE: (rows: 63978, columns: 4)
+Automatically generating validation set from 5% of the data.
+Tokenizing data and extracting features
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+Starting MaxEnt training with 121170 samples
+Iteration 1 training accuracy 0.996963
+Iteration 2 training accuracy 0.997409
+Iteration 3 training accuracy 0.997623
+Iteration 4 training accuracy 0.998506
+Iteration 5 training accuracy 0.999142
+Iteration 6 training accuracy 0.999431
+Iteration 7 training accuracy 0.999579
+Iteration 8 training accuracy 0.999620
+Iteration 9 training accuracy 0.999629
+Iteration 10 training accuracy 0.999678
+Iteration 11 training accuracy 0.999744
+Iteration 12 training accuracy 0.999769
+Iteration 13 training accuracy 0.999785
+Iteration 14 training accuracy 0.999802
+Iteration 15 training accuracy 0.999818
+Iteration 16 training accuracy 0.999851
+Iteration 17 training accuracy 0.999860
+Iteration 18 training accuracy 0.999868
+Iteration 19 training accuracy 0.999884
+Finished MaxEnt training in 14.02 seconds
+Classifier for "threat":
+TextClassifier
+
+Parameters
+Algorithm Type: MaxEnt Model
+Language: Optional(__C.NLLanguage(_rawValue: en))
+
+Performance on Training Data
+Number of examples: 121170
+Number of classes: 2
+Accuracy: 99.99%
+
+Performance on Validation Data
+Number of examples: 6545
+Number of classes: 2
+Accuracy: 99.66%
+
+SAVING MODEL threat TO ./Models/threatClassifier.mlmodel
+Trained model successfully saved at /Volumes/MEDIA&DEV/dev/ML_data/JigsawToxic/JigsawToxicity/JigsawToxicity/Models/threatClassifier.mlmodel.
+
+SAMPLE PREDICTIONS FOR threat
+
+Columns:
+    comment_text	string
+    threat	string
+Rows: 10
+Data:
++----------------+----------------+
+| comment_text   | threat         |
++----------------+----------------+
+| Sorry if the...| non-threat     |
+| alignment on...| non-threat     |
+| Oh, and the ...| non-threat     |
+| The Mitsurug...| non-threat     |
+| "  Re-consid...| non-threat     |
+| Not sure abo...| non-threat     |
+| Praise   loo...| non-threat     |
+| "   ""Mainla...| non-threat     |
+| Hi Explicit,...| non-threat     |
+| "  BI, you s...| non-threat     |
++----------------+----------------+
+[10 rows x 2 columns]
+
+SIZE: (rows: 10, columns: 2)
+EVALUATION METRICS FOR threat:
+----------------------------------
+Number of examples: 31856
+Number of classes: 2
+Accuracy: 99.58%
+
+******CONFUSION MATRIX******
+----------------------------------
+True\Pred  non-threat  threat      
+non-threat 31688       72          
+threat     62          34          
+
+******PRECISION RECALL******
+----------------------------------
+Class      Precision(%)   Recall(%)      
+non-threat 99.80          99.77          
+threat     32.08          35.42          
+
+
+./create_models: line 2:  5889 Killed: 9               swift main.swift $modelLabel
+
+real	37m46.619s
+user	36m10.152s
+sys	1m57.493s

@@ -1,0 +1,14 @@
+xcuserdata/
+.DS_Store
+.Trashes
+*.lock
+*~.nib
+build/
+JigsawToxicityCreateMLAppBeta3/Data
+python/Models
+data
+JigsawToxicityCreateML/JigsawToxicityCreateML/Models
+JigsawToxicityCreateML/JigsawToxicityCreateML/Data
+JigsawToxicityInference/JigsawToxicityInference/Data
+python/Models
+

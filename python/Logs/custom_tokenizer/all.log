@@ -1,0 +1,163 @@
+No arguments are passed. Using default.
+*******************************************
+INPUT DATASET: DESCRIBE, ORIGINAL
+*******************************************
+               toxic   severe_toxic        obscene         threat         insult  identity_hate
+count  159571.000000  159571.000000  159571.000000  159571.000000  159571.000000  159571.000000
+mean        0.095844       0.009996       0.052948       0.002996       0.049364       0.008805
+std         0.294379       0.099477       0.223931       0.054650       0.216627       0.093420
+min         0.000000       0.000000       0.000000       0.000000       0.000000       0.000000
+25%         0.000000       0.000000       0.000000       0.000000       0.000000       0.000000
+50%         0.000000       0.000000       0.000000       0.000000       0.000000       0.000000
+75%         0.000000       0.000000       0.000000       0.000000       0.000000       0.000000
+max         1.000000       1.000000       1.000000       1.000000       1.000000       1.000000
+*******************************************
+INPUT DATASET: HEAD
+*******************************************
+                 id                                       comment_text  toxic  severe_toxic  obscene  threat  insult  identity_hate
+0  0000997932d777bf  Explanation\nWhy the edits made under my usern...      0             0        0       0       0              0
+1  000103f0d9cfb60f  D'aww! He matches this background colour I'm s...      0             0        0       0       0              0
+2  000113f07ec002fd  Hey man, I'm really not trying to edit war. It...      0             0        0       0       0              0
+3  0001b41b1c6bb37e  "\nMore\nI can't make any real suggestions on ...      0             0        0       0       0              0
+4  0001d958c54c6e35  You, sir, are my hero. Any chance you remember...      0             0        0       0       0              0
+*******************************************
+SCORE DATASET: DESCRIBE
+*******************************************
+              toxic  severe_toxic       obscene        threat        insult  identity_hate
+count  63978.000000  63978.000000  63978.000000  63978.000000  63978.000000   63978.000000
+mean       0.095189      0.005736      0.057692      0.003298      0.053565       0.011129
+std        0.293478      0.075522      0.233161      0.057334      0.225160       0.104905
+min        0.000000      0.000000      0.000000      0.000000      0.000000       0.000000
+25%        0.000000      0.000000      0.000000      0.000000      0.000000       0.000000
+50%        0.000000      0.000000      0.000000      0.000000      0.000000       0.000000
+75%        0.000000      0.000000      0.000000      0.000000      0.000000       0.000000
+max        1.000000      1.000000      1.000000      1.000000      1.000000       1.000000
+*******************************************
+SCORE DATASET: HEAD
+*******************************************
+                  id                                       comment_text  toxic  severe_toxic  obscene  threat  insult  identity_hate
+5   0001ea8717f6de06  Thank you for understanding. I think very high...    0.0           0.0      0.0     0.0     0.0            0.0
+7   000247e83dcc1211                   :Dear god this site is horrible.    0.0           0.0      0.0     0.0     0.0            0.0
+11  0002f87b16116a7f  "::: Somebody will invariably try to add Relig...    0.0           0.0      0.0     0.0     0.0            0.0
+13  0003e1cccfd5a40a  " \n\n It says it right there that it IS a typ...    0.0           0.0      0.0     0.0     0.0            0.0
+14  00059ace3e3e9a53  " \n\n == Before adding a new product to the l...    0.0           0.0      0.0     0.0     0.0            0.0
+Input lengths: mean = 394.0732213246768, std = 590.7202819048919, max = 5000
+Score lengths: mean = 383.3793178905249, std = 598.1100714808687, max = 5000
+Dimensions in training set: (127656, 8)
+Dimensions in test set: (31915, 8)
+Dimensions in score set: (63978, 8)
+Using punctuation characters: !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+train_term_doc shape
+(127656, 356735)
+feature names sample (matrix columns, bag of words)
+81960             board -
+117109          ditto for
+267547             sail ,
+27867            2006 for
+281341          somehow ?
+314066         this range
+342835         whose talk
+332401     version before
+96227           client of
+7168           ( bounties
+29554       3rd paragraph
+174290       is continued
+83485              boys (
+49715           along for
+200226          messed it
+209201             naylor
+205084        move debate
+64382          are normal
+226290      one involving
+246219    probably before
+119540            driving
+335420        warnings as
+198096         me several
+67430         as everyone
+25112              09 and
+73192          barnstar i
+62375         applies and
+232034       our standard
+31359                 : 2
+307486          the shade
+236457               pavn
+254117         realized .
+59783           anomaly .
+315828            thus so
+248264    prostitutes and
+240813      playing cards
+137913         for female
+192264            lotus ,
+262969            rihanna
+120574              eagle
+62084            appeal -
+179889             job as
+161977                i /
+237465             per my
+189933       listed there
+176217            is weak
+229974            order i
+242940       portion that
+58644            and this
+294900             tamara
+dtype: object
+Creating model for  toxic
+Mean accuracy over test set for toxic: 0.9654394485351715
+Mean accuracy over score set for toxic: 0.9334615023914471
+Confusion matrix over test set for toxic:
+[[28742   226]
+ [  877  2070]]
+Confusion matrix over score set for toxic:
+[[55039  2849]
+ [ 1408  4682]]
+Saving model to ./Models/toxic.pkl
+Creating model for  severe_toxic
+Mean accuracy over test set for severe_toxic: 0.9906626977910074
+Mean accuracy over score set for severe_toxic: 0.9926537247178717
+Confusion matrix over test set for severe_toxic:
+[[31527    91]
+ [  207    90]]
+Confusion matrix over score set for severe_toxic:
+[[63380   231]
+ [  239   128]]
+Saving model to ./Models/severe_toxic.pkl
+Creating model for  obscene
+Mean accuracy over test set for obscene: 0.9809180636064546
+Mean accuracy over score set for obscene: 0.9663009159398543
+Confusion matrix over test set for obscene:
+[[30137   156]
+ [  453  1169]]
+Confusion matrix over score set for obscene:
+[[59374   913]
+ [ 1243  2448]]
+Saving model to ./Models/obscene.pkl
+Creating model for  threat
+Mean accuracy over test set for threat: 0.9977753407488642
+Mean accuracy over score set for threat: 0.9971709024977335
+Confusion matrix over test set for threat:
+[[31816     8]
+ [   63    28]]
+Confusion matrix over score set for threat:
+[[63724    43]
+ [  138    73]]
+Saving model to ./Models/threat.pkl
+Creating model for  insult
+Mean accuracy over test set for insult: 0.9730847563841454
+Mean accuracy over score set for insult: 0.9649723342398949
+Confusion matrix over test set for insult:
+[[30188   202]
+ [  657   868]]
+Confusion matrix over score set for insult:
+[[59947   604]
+ [ 1637  1790]]
+Saving model to ./Models/insult.pkl
+Creating model for  identity_hate
+Mean accuracy over test set for identity_hate: 0.992323358922137
+Mean accuracy over score set for identity_hate: 0.9909187533214543
+Confusion matrix over test set for identity_hate:
+[[31600    22]
+ [  223    70]]
+Confusion matrix over score set for identity_hate:
+[[63192    74]
+ [  507   205]]
+Saving model to ./Models/identity_hate.pkl

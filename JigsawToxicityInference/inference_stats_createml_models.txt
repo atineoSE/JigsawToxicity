@@ -1,0 +1,37 @@
+Inferring for 80000 entries
+INFERENCE STATS FOR MODEL toxic:
+Number of inputs recognized as toxic: 16788
+Number of inputs recognized as non-toxic: 63212
+Number of failed predictions: 0
+Classification time for toxic model over test set: 31.538082003593445
+Average classification time: 0.0003942260250449181
+INFERENCE STATS FOR MODEL severe_toxic:
+Number of inputs recognized as severe_toxic: 18854
+Number of inputs recognized as non-severe_toxic: 141146
+Number of failed predictions: 0
+Classification time for severe_toxic model over test set: 32.069936990737915
+Average classification time: 0.00040087421238422393
+INFERENCE STATS FOR MODEL obscene:
+Number of inputs recognized as obscene: 29043
+Number of inputs recognized as non-obscene: 210957
+Number of failed predictions: 0
+Classification time for obscene model over test set: 35.87415099143982
+Average classification time: 0.00044842688739299777
+INFERENCE STATS FOR MODEL threat:
+Number of inputs recognized as threat: 29630
+Number of inputs recognized as non-threat: 290370
+Number of failed predictions: 0
+Classification time for threat model over test set: 36.38470494747162
+Average classification time: 0.00045480881184339526
+INFERENCE STATS FOR MODEL insult:
+Number of inputs recognized as insult: 38090
+Number of inputs recognized as non-insult: 361910
+Number of failed predictions: 0
+Classification time for insult model over test set: 36.4976019859314
+Average classification time: 0.00045622002482414244
+INFERENCE STATS FOR MODEL identity_hate:
+Number of inputs recognized as identity_hate: 39848
+Number of inputs recognized as non-identity_hate: 440152
+Number of failed predictions: 0
+Classification time for identity_hate model over test set: 37.175686955451965
+Average classification time: 0.0004646960869431496

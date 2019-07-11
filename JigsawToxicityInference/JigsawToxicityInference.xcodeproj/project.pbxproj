@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B5215D22297D6DF007C2D72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5215D12297D6DF007C2D72 /* AppDelegate.swift */; };
+		0B5215D42297D6DF007C2D72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5215D32297D6DF007C2D72 /* ViewController.swift */; };
+		0B5215D72297D6DF007C2D72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B5215D52297D6DF007C2D72 /* Main.storyboard */; };
+		0B5215D92297D6E0007C2D72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B5215D82297D6E0007C2D72 /* Assets.xcassets */; };
+		0B5215DC2297D6E0007C2D72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B5215DA2297D6E0007C2D72 /* LaunchScreen.storyboard */; };
+		0B52160D22980192007C2D72 /* obsceneClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0B52160722980192007C2D72 /* obsceneClassifier.mlmodel */; };
+		0B52160E22980192007C2D72 /* obsceneClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0B52160722980192007C2D72 /* obsceneClassifier.mlmodel */; };
+		0B52160F22980192007C2D72 /* severe_toxicClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0B52160822980192007C2D72 /* severe_toxicClassifier.mlmodel */; };
+		0B52161022980192007C2D72 /* severe_toxicClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0B52160822980192007C2D72 /* severe_toxicClassifier.mlmodel */; };
+		0B52161122980192007C2D72 /* insultClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0B52160922980192007C2D72 /* insultClassifier.mlmodel */; };
+		0B52161222980192007C2D72 /* insultClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0B52160922980192007C2D72 /* insultClassifier.mlmodel */; };
+		0B52161322980192007C2D72 /* identity_hateClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0B52160A22980192007C2D72 /* identity_hateClassifier.mlmodel */; };
+		0B52161422980192007C2D72 /* identity_hateClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0B52160A22980192007C2D72 /* identity_hateClassifier.mlmodel */; };
+		0B52161522980192007C2D72 /* threatClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0B52160B22980192007C2D72 /* threatClassifier.mlmodel */; };
+		0B52161622980192007C2D72 /* threatClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0B52160B22980192007C2D72 /* threatClassifier.mlmodel */; };
+		0B52161722980192007C2D72 /* toxicClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0B52160C22980192007C2D72 /* toxicClassifier.mlmodel */; };
+		0B52161822980192007C2D72 /* toxicClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0B52160C22980192007C2D72 /* toxicClassifier.mlmodel */; };
+		0B52161A229801CC007C2D72 /* CoreMLModelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B521619229801CC007C2D72 /* CoreMLModelsTests.swift */; };
+		0B521620229807AA007C2D72 /* inputs_for_classification.csv in Resources */ = {isa = PBXBuildFile; fileRef = 0B52161F229807A9007C2D72 /* inputs_for_classification.csv */; };
+		0B521621229807AA007C2D72 /* inputs_for_classification.csv in Resources */ = {isa = PBXBuildFile; fileRef = 0B52161F229807A9007C2D72 /* inputs_for_classification.csv */; };
+		0B52162822982B83007C2D72 /* threatSK.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0B52162222982B82007C2D72 /* threatSK.mlmodel */; };
+		0B52162922982B83007C2D72 /* threatSK.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0B52162222982B82007C2D72 /* threatSK.mlmodel */; };
+		0B52162A22982B83007C2D72 /* severe_toxicSK.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0B52162322982B83007C2D72 /* severe_toxicSK.mlmodel */; };
+		0B52162B22982B83007C2D72 /* severe_toxicSK.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0B52162322982B83007C2D72 /* severe_toxicSK.mlmodel */; };
+		0B52162C22982B83007C2D72 /* toxicSK.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0B52162422982B83007C2D72 /* toxicSK.mlmodel */; };
+		0B52162D22982B83007C2D72 /* toxicSK.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0B52162422982B83007C2D72 /* toxicSK.mlmodel */; };
+		0B52162E22982B83007C2D72 /* identity_hateSK.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0B52162522982B83007C2D72 /* identity_hateSK.mlmodel */; };
+		0B52162F22982B83007C2D72 /* identity_hateSK.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0B52162522982B83007C2D72 /* identity_hateSK.mlmodel */; };
+		0B52163022982B83007C2D72 /* insultSK.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0B52162622982B83007C2D72 /* insultSK.mlmodel */; };
+		0B52163122982B83007C2D72 /* insultSK.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0B52162622982B83007C2D72 /* insultSK.mlmodel */; };
+		0B52163222982B83007C2D72 /* obsceneSK.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0B52162722982B83007C2D72 /* obsceneSK.mlmodel */; };
+		0B52163322982B83007C2D72 /* obsceneSK.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0B52162722982B83007C2D72 /* obsceneSK.mlmodel */; };
+		0B6555C922D4D484005C7FD8 /* NLP_Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6555C822D4D484005C7FD8 /* NLP_Tools.swift */; };
+		0B6555CA22D4D484005C7FD8 /* NLP_Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6555C822D4D484005C7FD8 /* NLP_Tools.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0B5215E32297D6E0007C2D72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B5215C62297D6DF007C2D72 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B5215CD2297D6DF007C2D72;
+			remoteInfo = JigsawToxicityInference;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B5215CE2297D6DF007C2D72 /* JigsawToxicityInference.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JigsawToxicityInference.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B5215D12297D6DF007C2D72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0B5215D32297D6DF007C2D72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0B5215D62297D6DF007C2D72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0B5215D82297D6E0007C2D72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0B5215DB2297D6E0007C2D72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0B5215DD2297D6E0007C2D72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B5215E22297D6E0007C2D72 /* JigsawToxicityInferenceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JigsawToxicityInferenceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B5215E82297D6E0007C2D72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B52160722980192007C2D72 /* obsceneClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = obsceneClassifier.mlmodel; path = ../../../JigsawToxicityCreateML/JigsawToxicityCreateML/Models/obsceneClassifier.mlmodel; sourceTree = "<group>"; };
+		0B52160822980192007C2D72 /* severe_toxicClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = severe_toxicClassifier.mlmodel; path = ../../../JigsawToxicityCreateML/JigsawToxicityCreateML/Models/severe_toxicClassifier.mlmodel; sourceTree = "<group>"; };
+		0B52160922980192007C2D72 /* insultClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = insultClassifier.mlmodel; path = ../../../JigsawToxicityCreateML/JigsawToxicityCreateML/Models/insultClassifier.mlmodel; sourceTree = "<group>"; };
+		0B52160A22980192007C2D72 /* identity_hateClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = identity_hateClassifier.mlmodel; path = ../../../JigsawToxicityCreateML/JigsawToxicityCreateML/Models/identity_hateClassifier.mlmodel; sourceTree = "<group>"; };
+		0B52160B22980192007C2D72 /* threatClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = threatClassifier.mlmodel; path = ../../../JigsawToxicityCreateML/JigsawToxicityCreateML/Models/threatClassifier.mlmodel; sourceTree = "<group>"; };
+		0B52160C22980192007C2D72 /* toxicClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = toxicClassifier.mlmodel; path = ../../../JigsawToxicityCreateML/JigsawToxicityCreateML/Models/toxicClassifier.mlmodel; sourceTree = "<group>"; };
+		0B521619229801CC007C2D72 /* CoreMLModelsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLModelsTests.swift; sourceTree = "<group>"; };
+		0B52161F229807A9007C2D72 /* inputs_for_classification.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = inputs_for_classification.csv; sourceTree = "<group>"; };
+		0B52162222982B82007C2D72 /* threatSK.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = threatSK.mlmodel; path = ../../../python/Models/threatSK.mlmodel; sourceTree = "<group>"; };
+		0B52162322982B83007C2D72 /* severe_toxicSK.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = severe_toxicSK.mlmodel; path = ../../../python/Models/severe_toxicSK.mlmodel; sourceTree = "<group>"; };
+		0B52162422982B83007C2D72 /* toxicSK.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = toxicSK.mlmodel; path = ../../../python/Models/toxicSK.mlmodel; sourceTree = "<group>"; };
+		0B52162522982B83007C2D72 /* identity_hateSK.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = identity_hateSK.mlmodel; path = ../../../python/Models/identity_hateSK.mlmodel; sourceTree = "<group>"; };
+		0B52162622982B83007C2D72 /* insultSK.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = insultSK.mlmodel; path = ../../../python/Models/insultSK.mlmodel; sourceTree = "<group>"; };
+		0B52162722982B83007C2D72 /* obsceneSK.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = obsceneSK.mlmodel; path = ../../../python/Models/obsceneSK.mlmodel; sourceTree = "<group>"; };
+		0B6555C822D4D484005C7FD8 /* NLP_Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLP_Tools.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0B5215CB2297D6DF007C2D72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B5215DF2297D6E0007C2D72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B5215C52297D6DF007C2D72 = {
+			isa = PBXGroup;
+			children = (
+				0B5215D02297D6DF007C2D72 /* JigsawToxicityInference */,
+				0B5215E52297D6E0007C2D72 /* JigsawToxicityInferenceTests */,
+				0B5215CF2297D6DF007C2D72 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0B5215CF2297D6DF007C2D72 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0B5215CE2297D6DF007C2D72 /* JigsawToxicityInference.app */,
+				0B5215E22297D6E0007C2D72 /* JigsawToxicityInferenceTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0B5215D02297D6DF007C2D72 /* JigsawToxicityInference */ = {
+			isa = PBXGroup;
+			children = (
+				0B52161B2298037C007C2D72 /* Data */,
+				0B52160622980169007C2D72 /* MLModels */,
+				0B5215D12297D6DF007C2D72 /* AppDelegate.swift */,
+				0B5215D32297D6DF007C2D72 /* ViewController.swift */,
+				0B5215D52297D6DF007C2D72 /* Main.storyboard */,
+				0B5215D82297D6E0007C2D72 /* Assets.xcassets */,
+				0B5215DA2297D6E0007C2D72 /* LaunchScreen.storyboard */,
+				0B5215DD2297D6E0007C2D72 /* Info.plist */,
+				0B6555C822D4D484005C7FD8 /* NLP_Tools.swift */,
+			);
+			path = JigsawToxicityInference;
+			sourceTree = "<group>";
+		};
+		0B5215E52297D6E0007C2D72 /* JigsawToxicityInferenceTests */ = {
+			isa = PBXGroup;
+			children = (
+				0B5215E82297D6E0007C2D72 /* Info.plist */,
+				0B521619229801CC007C2D72 /* CoreMLModelsTests.swift */,
+			);
+			path = JigsawToxicityInferenceTests;
+			sourceTree = "<group>";
+		};
+		0B52160622980169007C2D72 /* MLModels */ = {
+			isa = PBXGroup;
+			children = (
+				0B52160A22980192007C2D72 /* identity_hateClassifier.mlmodel */,
+				0B52160922980192007C2D72 /* insultClassifier.mlmodel */,
+				0B52160722980192007C2D72 /* obsceneClassifier.mlmodel */,
+				0B52160822980192007C2D72 /* severe_toxicClassifier.mlmodel */,
+				0B52160B22980192007C2D72 /* threatClassifier.mlmodel */,
+				0B52160C22980192007C2D72 /* toxicClassifier.mlmodel */,
+				0B52162522982B83007C2D72 /* identity_hateSK.mlmodel */,
+				0B52162622982B83007C2D72 /* insultSK.mlmodel */,
+				0B52162722982B83007C2D72 /* obsceneSK.mlmodel */,
+				0B52162322982B83007C2D72 /* severe_toxicSK.mlmodel */,
+				0B52162222982B82007C2D72 /* threatSK.mlmodel */,
+				0B52162422982B83007C2D72 /* toxicSK.mlmodel */,
+			);
+			path = MLModels;
+			sourceTree = "<group>";
+		};
+		0B52161B2298037C007C2D72 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0B52161F229807A9007C2D72 /* inputs_for_classification.csv */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0B5215CD2297D6DF007C2D72 /* JigsawToxicityInference */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B5215EB2297D6E0007C2D72 /* Build configuration list for PBXNativeTarget "JigsawToxicityInference" */;
+			buildPhases = (
+				0B5215CA2297D6DF007C2D72 /* Sources */,
+				0B5215CB2297D6DF007C2D72 /* Frameworks */,
+				0B5215CC2297D6DF007C2D72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JigsawToxicityInference;
+			productName = JigsawToxicityInference;
+			productReference = 0B5215CE2297D6DF007C2D72 /* JigsawToxicityInference.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0B5215E12297D6E0007C2D72 /* JigsawToxicityInferenceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B5215EE2297D6E0007C2D72 /* Build configuration list for PBXNativeTarget "JigsawToxicityInferenceTests" */;
+			buildPhases = (
+				0B5215DE2297D6E0007C2D72 /* Sources */,
+				0B5215DF2297D6E0007C2D72 /* Frameworks */,
+				0B5215E02297D6E0007C2D72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B5215E42297D6E0007C2D72 /* PBXTargetDependency */,
+			);
+			name = JigsawToxicityInferenceTests;
+			productName = JigsawToxicityInferenceTests;
+			productReference = 0B5215E22297D6E0007C2D72 /* JigsawToxicityInferenceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0B5215C62297D6DF007C2D72 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = adriantineo.com;
+				TargetAttributes = {
+					0B5215CD2297D6DF007C2D72 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					0B5215E12297D6E0007C2D72 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 0B5215CD2297D6DF007C2D72;
+					};
+				};
+			};
+			buildConfigurationList = 0B5215C92297D6DF007C2D72 /* Build configuration list for PBXProject "JigsawToxicityInference" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0B5215C52297D6DF007C2D72;
+			productRefGroup = 0B5215CF2297D6DF007C2D72 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0B5215CD2297D6DF007C2D72 /* JigsawToxicityInference */,
+				0B5215E12297D6E0007C2D72 /* JigsawToxicityInferenceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0B5215CC2297D6DF007C2D72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B5215DC2297D6E0007C2D72 /* LaunchScreen.storyboard in Resources */,
+				0B5215D92297D6E0007C2D72 /* Assets.xcassets in Resources */,
+				0B5215D72297D6DF007C2D72 /* Main.storyboard in Resources */,
+				0B521620229807AA007C2D72 /* inputs_for_classification.csv in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B5215E02297D6E0007C2D72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B521621229807AA007C2D72 /* inputs_for_classification.csv in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B5215CA2297D6DF007C2D72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B52162E22982B83007C2D72 /* identity_hateSK.mlmodel in Sources */,
+				0B52160D22980192007C2D72 /* obsceneClassifier.mlmodel in Sources */,
+				0B52161122980192007C2D72 /* insultClassifier.mlmodel in Sources */,
+				0B52162C22982B83007C2D72 /* toxicSK.mlmodel in Sources */,
+				0B52163022982B83007C2D72 /* insultSK.mlmodel in Sources */,
+				0B5215D42297D6DF007C2D72 /* ViewController.swift in Sources */,
+				0B52163222982B83007C2D72 /* obsceneSK.mlmodel in Sources */,
+				0B52161722980192007C2D72 /* toxicClassifier.mlmodel in Sources */,
+				0B52161322980192007C2D72 /* identity_hateClassifier.mlmodel in Sources */,
+				0B6555C922D4D484005C7FD8 /* NLP_Tools.swift in Sources */,
+				0B52162822982B83007C2D72 /* threatSK.mlmodel in Sources */,
+				0B5215D22297D6DF007C2D72 /* AppDelegate.swift in Sources */,
+				0B52160F22980192007C2D72 /* severe_toxicClassifier.mlmodel in Sources */,
+				0B52162A22982B83007C2D72 /* severe_toxicSK.mlmodel in Sources */,
+				0B52161522980192007C2D72 /* threatClassifier.mlmodel in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B5215DE2297D6E0007C2D72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B52162D22982B83007C2D72 /* toxicSK.mlmodel in Sources */,
+				0B52161822980192007C2D72 /* toxicClassifier.mlmodel in Sources */,
+				0B52161222980192007C2D72 /* insultClassifier.mlmodel in Sources */,
+				0B52161422980192007C2D72 /* identity_hateClassifier.mlmodel in Sources */,
+				0B52163322982B83007C2D72 /* obsceneSK.mlmodel in Sources */,
+				0B52161A229801CC007C2D72 /* CoreMLModelsTests.swift in Sources */,
+				0B52160E22980192007C2D72 /* obsceneClassifier.mlmodel in Sources */,
+				0B52161022980192007C2D72 /* severe_toxicClassifier.mlmodel in Sources */,
+				0B52162F22982B83007C2D72 /* identity_hateSK.mlmodel in Sources */,
+				0B52162922982B83007C2D72 /* threatSK.mlmodel in Sources */,
+				0B52163122982B83007C2D72 /* insultSK.mlmodel in Sources */,
+				0B52162B22982B83007C2D72 /* severe_toxicSK.mlmodel in Sources */,
+				0B6555CA22D4D484005C7FD8 /* NLP_Tools.swift in Sources */,
+				0B52161622980192007C2D72 /* threatClassifier.mlmodel in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B5215E42297D6E0007C2D72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B5215CD2297D6DF007C2D72 /* JigsawToxicityInference */;
+			targetProxy = 0B5215E32297D6E0007C2D72 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0B5215D52297D6DF007C2D72 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B5215D62297D6DF007C2D72 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0B5215DA2297D6E0007C2D72 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B5215DB2297D6E0007C2D72 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0B5215E92297D6E0007C2D72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0B5215EA2297D6E0007C2D72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0B5215EC2297D6E0007C2D72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WDVRK9UE68;
+				INFOPLIST_FILE = JigsawToxicityInference/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adriantineo.JigsawToxicityInference;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0B5215ED2297D6E0007C2D72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WDVRK9UE68;
+				INFOPLIST_FILE = JigsawToxicityInference/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adriantineo.JigsawToxicityInference;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0B5215EF2297D6E0007C2D72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WDVRK9UE68;
+				INFOPLIST_FILE = JigsawToxicityInferenceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adriantineo.JigsawToxicityInferenceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JigsawToxicityInference.app/JigsawToxicityInference";
+			};
+			name = Debug;
+		};
+		0B5215F02297D6E0007C2D72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WDVRK9UE68;
+				INFOPLIST_FILE = JigsawToxicityInferenceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adriantineo.JigsawToxicityInferenceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JigsawToxicityInference.app/JigsawToxicityInference";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B5215C92297D6DF007C2D72 /* Build configuration list for PBXProject "JigsawToxicityInference" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B5215E92297D6E0007C2D72 /* Debug */,
+				0B5215EA2297D6E0007C2D72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B5215EB2297D6E0007C2D72 /* Build configuration list for PBXNativeTarget "JigsawToxicityInference" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B5215EC2297D6E0007C2D72 /* Debug */,
+				0B5215ED2297D6E0007C2D72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B5215EE2297D6E0007C2D72 /* Build configuration list for PBXNativeTarget "JigsawToxicityInferenceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B5215EF2297D6E0007C2D72 /* Debug */,
+				0B5215F02297D6E0007C2D72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0B5215C62297D6DF007C2D72 /* Project object */;
+}

@@ -1,0 +1,48 @@
+Test Suite 'Selected tests' started at 2019-06-01 18:21:47.181
+Test Suite 'JigsawToxicityInferenceTests.xctest' started at 2019-06-01 18:21:47.182
+Test Suite 'CoreMLModelsTests' started at 2019-06-01 18:21:47.182
+Test Case '-[JigsawToxicityInferenceTests.CoreMLModelsTests testPerformanceCoreMLModels]' started.
+Inferring for 80000 entries
+INFERENCE STATS FOR MODEL toxic:
+Number of inputs recognized as toxic: 16788
+Number of inputs recognized as non-toxic: 63212
+Number of failed predictions: 0
+Classification time for toxic model over test set: 26.94478702545166
+Average classification time: 0.00033680983781814573
+INFERENCE STATS FOR MODEL severe_toxic:
+Number of inputs recognized as severe_toxic: 18854
+Number of inputs recognized as non-severe_toxic: 141146
+Number of failed predictions: 0
+Classification time for severe_toxic model over test set: 26.675809025764465
+Average classification time: 0.0003334476128220558
+INFERENCE STATS FOR MODEL obscene:
+Number of inputs recognized as obscene: 29043
+Number of inputs recognized as non-obscene: 210957
+Number of failed predictions: 0
+Classification time for obscene model over test set: 26.620608925819397
+Average classification time: 0.00033275761157274247
+INFERENCE STATS FOR MODEL threat:
+Number of inputs recognized as threat: 29630
+Number of inputs recognized as non-threat: 290370
+Number of failed predictions: 0
+Classification time for threat model over test set: 26.620102047920227
+Average classification time: 0.0003327512755990028
+INFERENCE STATS FOR MODEL insult:
+Number of inputs recognized as insult: 38090
+Number of inputs recognized as non-insult: 361910
+Number of failed predictions: 0
+Classification time for insult model over test set: 26.689874053001404
+Average classification time: 0.00033362342566251756
+INFERENCE STATS FOR MODEL identity_hate:
+Number of inputs recognized as identity_hate: 39848
+Number of inputs recognized as non-identity_hate: 440152
+Number of failed predictions: 0
+Classification time for identity_hate model over test set: 26.730233907699585
+Average classification time: 0.0003341279238462448
+Test Case '-[JigsawToxicityInferenceTests.CoreMLModelsTests testPerformanceCoreMLModels]' passed (203.102 seconds).
+Test Suite 'CoreMLModelsTests' passed at 2019-06-01 18:25:10.286.
+	 Executed 1 test, with 0 failures (0 unexpected) in 203.102 (203.104) seconds
+Test Suite 'JigsawToxicityInferenceTests.xctest' passed at 2019-06-01 18:25:10.286.
+	 Executed 1 test, with 0 failures (0 unexpected) in 203.102 (203.105) seconds
+Test Suite 'Selected tests' passed at 2019-06-01 18:25:10.287.
+	 Executed 1 test, with 0 failures (0 unexpected) in 203.102 (203.106) seconds

@@ -1,0 +1,237 @@
+Proceeding with model label "identity_hate"
+Finished parsing file /Volumes/MEDIA&DEV/dev/ML_data/JigsawToxic/JigsawToxicity/JigsawToxicity/Data/train_pre.csv
+Parsing completed. Parsed 100 lines in 0.871235 secs.
+Read 122167 lines. Lines per second: 193187	
+Finished parsing file /Volumes/MEDIA&DEV/dev/ML_data/JigsawToxic/JigsawToxicity/JigsawToxicity/Data/train_pre.csv
+Parsing completed. Parsed 159571 lines in 0.779242 secs.
+TRAINING TABLE
+
+Columns:
+    id	string
+    comment_text	string
+    toxic	integer
+    severe_toxic	integer
+    obscene	integer
+    threat	integer
+    insult	integer
+    identity_hate	integer
+    identity_hate_label	string
+Rows: ?
+Data:
++----------------+----------------+----------------+----------------+----------------+
+| id             | comment_text   | toxic          | severe_toxic   | obscene        |
++----------------+----------------+----------------+----------------+----------------+
+| 0000997932d7...| Explanation ...| 0              | 0              | 0              |
+| 000103f0d9cf...| D'aww! He ma...| 0              | 0              | 0              |
+| 000113f07ec0...| Hey man, I'm...| 0              | 0              | 0              |
+| 0001b41b1c6b...| " More I can...| 0              | 0              | 0              |
+| 0001d958c54c...| You, sir, ar...| 0              | 0              | 0              |
+| 00025465d472...| "  Congratul...| 0              | 0              | 0              |
+| 0002bcb3da6c...| COCKSUCKER B...| 1              | 1              | 1              |
+| 00031b1e95af...| Your vandali...| 0              | 0              | 0              |
+| 0005300084f9...| " Fair use r...| 0              | 0              | 0              |
+| 00054a5e18b5...| bbq   be a m...| 0              | 0              | 0              |
++----------------+----------------+----------------+----------------+----------------+
++----------------+----------------+----------------+---------------------+
+| threat         | insult         | identity_hate  | identity_hate_label |
++----------------+----------------+----------------+---------------------+
+| 0              | 0              | 0              | non-identity_hate   |
+| 0              | 0              | 0              | non-identity_hate   |
+| 0              | 0              | 0              | non-identity_hate   |
+| 0              | 0              | 0              | non-identity_hate   |
+| 0              | 0              | 0              | non-identity_hate   |
+| 0              | 0              | 0              | non-identity_hate   |
+| 0              | 1              | 0              | non-identity_hate   |
+| 0              | 0              | 0              | non-identity_hate   |
+| 0              | 0              | 0              | non-identity_hate   |
+| 0              | 0              | 0              | non-identity_hate   |
++----------------+----------------+----------------+---------------------+
+? rows x 9 columns]
+
+SIZE: (rows: 127715, columns: 9)
+TEST TABLE
+
+Columns:
+    id	string
+    comment_text	string
+    toxic	integer
+    severe_toxic	integer
+    obscene	integer
+    threat	integer
+    insult	integer
+    identity_hate	integer
+    identity_hate_label	string
+Rows: ?
+Data:
++----------------+----------------+----------------+----------------+----------------+
+| id             | comment_text   | toxic          | severe_toxic   | obscene        |
++----------------+----------------+----------------+----------------+----------------+
+| 00037261f536...| Sorry if the...| 0              | 0              | 0              |
+| 00040093b268...| alignment on...| 0              | 0              | 0              |
+| 00070ef96486...| Oh, and the ...| 0              | 0              | 0              |
+| 0009801bd85e...| The Mitsurug...| 0              | 0              | 0              |
+| 000cfee90f50...| "  Re-consid...| 0              | 0              | 0              |
+| 00128363e367...| Not sure abo...| 0              | 0              | 0              |
+| 001325b8b20e...| Praise   loo...| 0              | 0              | 0              |
+| 00151a9f93c6...| "   ""Mainla...| 0              | 0              | 0              |
+| 00169857adbc...| Hi Explicit,...| 0              | 0              | 0              |
+| 001d8e7be417...| "  BI, you s...| 0              | 0              | 0              |
++----------------+----------------+----------------+----------------+----------------+
++----------------+----------------+----------------+---------------------+
+| threat         | insult         | identity_hate  | identity_hate_label |
++----------------+----------------+----------------+---------------------+
+| 0              | 0              | 0              | non-identity_hate   |
+| 0              | 0              | 0              | non-identity_hate   |
+| 0              | 0              | 0              | non-identity_hate   |
+| 0              | 0              | 0              | non-identity_hate   |
+| 0              | 0              | 0              | non-identity_hate   |
+| 0              | 0              | 0              | non-identity_hate   |
+| 0              | 0              | 0              | non-identity_hate   |
+| 0              | 0              | 0              | non-identity_hate   |
+| 0              | 0              | 0              | non-identity_hate   |
+| 0              | 0              | 0              | non-identity_hate   |
++----------------+----------------+----------------+---------------------+
+? rows x 9 columns]
+
+SIZE: (rows: 31856, columns: 9)
+Finished parsing file /Volumes/MEDIA&DEV/dev/ML_data/JigsawToxic/JigsawToxicity/JigsawToxicity/Data/test_pre.csv
+Parsing completed. Parsed 100 lines in 0.771863 secs.
+Finished parsing file /Volumes/MEDIA&DEV/dev/ML_data/JigsawToxic/JigsawToxicity/JigsawToxicity/Data/test_pre.csv
+Parsing completed. Parsed 153164 lines in 0.702339 secs.
+Finished parsing file /Volumes/MEDIA&DEV/dev/ML_data/JigsawToxic/JigsawToxicity/JigsawToxicity/Data/test_labels.csv
+Parsing completed. Parsed 100 lines in 0.105698 secs.
+Finished parsing file /Volumes/MEDIA&DEV/dev/ML_data/JigsawToxic/JigsawToxicity/JigsawToxicity/Data/test_labels.csv
+Parsing completed. Parsed 153164 lines in 0.087189 secs.
+SCORING TABLE
+
+Columns:
+    id	string
+    comment_text	string
+    identity_hate	integer
+    identity_hate_label	string
+Rows: 63978
+Data:
++----------------+----------------+----------------+---------------------+
+| id             | comment_text   | identity_hate  | identity_hate_label |
++----------------+----------------+----------------+---------------------+
+| 0001ea8717f6...| Thank you fo...| 0              | non-identity_hate   |
+| 000247e83dcc...| :Dear god th...| 0              | non-identity_hate   |
+| 0002f87b1611...| "::: Somebod...| 0              | non-identity_hate   |
+| 0003e1cccfd5...| "    It says...| 0              | non-identity_hate   |
+| 00059ace3e3e...| "    == Befo...| 0              | non-identity_hate   |
+| 000663aff0ff...| this other o...| 0              | non-identity_hate   |
+| 000689dd34e2...| == Reason fo...| 0              | non-identity_hate   |
+| 000844b52dee...| |blocked]] f...| 0              | non-identity_hate   |
+| 00091c35fa9d...| == Arabs are...| 0              | non-identity_hate   |
+| 000968ce11f5...| Please stop....| 0              | non-identity_hate   |
++----------------+----------------+----------------+---------------------+
+[63978 rows x 4 columns]
+
+SIZE: (rows: 63978, columns: 4)
+Automatically generating validation set from 5% of the data.
+Tokenizing data and extracting features
+10% complete
+20% complete
+30% complete
+40% complete
+50% complete
+60% complete
+70% complete
+80% complete
+90% complete
+100% complete
+Starting MaxEnt training with 121170 samples
+Iteration 1 training accuracy 0.991087
+Iteration 2 training accuracy 0.991145
+Iteration 3 training accuracy 0.993654
+Iteration 4 training accuracy 0.995519
+Iteration 5 training accuracy 0.996633
+Iteration 6 training accuracy 0.997392
+Iteration 7 training accuracy 0.998118
+Iteration 8 training accuracy 0.998440
+Iteration 9 training accuracy 0.998647
+Iteration 10 training accuracy 0.998869
+Iteration 11 training accuracy 0.998960
+Iteration 12 training accuracy 0.999117
+Iteration 13 training accuracy 0.999183
+Iteration 14 training accuracy 0.999282
+Iteration 15 training accuracy 0.999348
+Iteration 16 training accuracy 0.999389
+Iteration 17 training accuracy 0.999398
+Iteration 18 training accuracy 0.999464
+Iteration 19 training accuracy 0.999521
+Iteration 20 training accuracy 0.999530
+Iteration 21 training accuracy 0.999538
+Iteration 22 training accuracy 0.999546
+Iteration 23 training accuracy 0.999554
+Iteration 24 training accuracy 0.999563
+Iteration 25 training accuracy 0.999571
+Finished MaxEnt training in 21.14 seconds
+Classifier for "identity_hate":
+TextClassifier
+
+Parameters
+Algorithm Type: MaxEnt Model
+Language: Optional(__C.NLLanguage(_rawValue: en))
+
+Performance on Training Data
+Number of examples: 121170
+Number of classes: 2
+Accuracy: 99.96%
+
+Performance on Validation Data
+Number of examples: 6545
+Number of classes: 2
+Accuracy: 98.46%
+
+SAVING MODEL identity_hate TO ./Models/identity_hateClassifier.mlmodel
+Trained model successfully saved at /Volumes/MEDIA&DEV/dev/ML_data/JigsawToxic/JigsawToxicity/JigsawToxicity/Models/identity_hateClassifier.mlmodel.
+
+SAMPLE PREDICTIONS FOR identity_hate
+
+Columns:
+    comment_text	string
+    identity_hate	string
+Rows: 10
+Data:
++----------------+----------------+
+| comment_text   | identity_hate  |
++----------------+----------------+
+| Sorry if the...| non-identity...|
+| alignment on...| non-identity...|
+| Oh, and the ...| non-identity...|
+| The Mitsurug...| non-identity...|
+| "  Re-consid...| non-identity...|
+| Not sure abo...| non-identity...|
+| Praise   loo...| non-identity...|
+| "   ""Mainla...| non-identity...|
+| Hi Explicit,...| non-identity...|
+| "  BI, you s...| non-identity...|
++----------------+----------------+
+[10 rows x 2 columns]
+
+SIZE: (rows: 10, columns: 2)
+EVALUATION METRICS FOR identity_hate:
+----------------------------------
+Number of examples: 31856
+Number of classes: 2
+Accuracy: 98.72%
+
+******CONFUSION MATRIX******
+----------------------------------
+True\Pred         identity_hate      non-identity_hate  
+identity_hate     83                 179                
+non-identity_hate 229                31365              
+
+******PRECISION RECALL******
+----------------------------------
+Class             Precision(%)   Recall(%)      
+identity_hate     26.60          31.68          
+non-identity_hate 99.43          99.28          
+
+
+./create_models: line 2:  8196 Killed: 9               swift main.swift $modelLabel
+
+real	36m44.704s
+user	35m15.412s
+sys	1m26.666s

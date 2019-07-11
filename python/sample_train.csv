@@ -1,0 +1,5 @@
+"id","comment_text","toxic"
+"id1","This is the first document.",1
+"id2","This document is the second document.",0
+"id3","And this is the third one.",0
+"id4","Is this the first document?",1

@@ -1,0 +1,5 @@
+#!/bin/bash
+for modelLabel in "toxic" "severe_toxic" "obscene" "threat" "insult" "identity_hate"
+do
+    (time python kaggle_kernel_NB-SVM.py $modelLabel) &> ./Logs/$modelLabel.log
+done
